@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: peruripramod/cart
+        image: peruripramod/cart:v1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:

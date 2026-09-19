@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: peruripramod/frontend
+        image: peruripramod/frontend:v1
         imagePullPolicy: Always
         ports:
         - name: liveness-port

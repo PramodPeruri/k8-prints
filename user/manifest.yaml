@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: peruripramod/user
+        image: peruripramod/user:v1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
