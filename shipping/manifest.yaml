@@ -5,7 +5,7 @@ metadata:
   namespace: prints
 data:
   CART_ENDPOINT: "cart:8080"
-  DB_HOST: "catalogue"
+  DB_HOST: "mysql"
 ---
 apiVersion: apps/v1
 kind: Deployment
