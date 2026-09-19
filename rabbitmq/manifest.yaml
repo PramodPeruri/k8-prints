@@ -32,6 +32,7 @@ spec:
           value: roboshop
         - name: RABBITMQ_DEFAULT_PASS
           value: roboshop123
+        imagePullPolicy: Always
         readinessProbe:
           tcpSocket:
             port: 5672
@@ -55,5 +56,5 @@ spec:
     tier: db
   ports:
     - protocol: TCP
-      port: 6379
-      targetPort: 6379
+      port: 5672
+      targetPort: 5672
