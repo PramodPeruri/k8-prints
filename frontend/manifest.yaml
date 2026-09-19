@@ -84,7 +84,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: peruripramod/frontend:v1
+          image: peruripramod/frontend:v2
           imagePullPolicy: Always
 
           ports:

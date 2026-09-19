@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: peruripramod/mongodb:v1
+        image: peruripramod/mongodb:v2
         readinessProbe:
           tcpSocket:
             port: 27017

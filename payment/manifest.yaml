@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
       - name: payment
-        image: peruripramod/payment:v1
+        image: peruripramod/payment:v2
         imagePullPolicy: Always
         envFrom:
         - configMapRef:

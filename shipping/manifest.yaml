@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: peruripramod/shipping:v1
+        image: peruripramod/shipping:v2
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
