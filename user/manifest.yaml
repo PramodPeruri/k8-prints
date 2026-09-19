@@ -12,7 +12,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user
-  Namespace: prints
+  namespace: prints
   # these are replica set labels
   labels:
     project: prints
@@ -49,13 +49,13 @@ spec:
             path: /health
             port: liveness-port
           failureThreshold: 1
-          periodseconds: 15
+          periodSeconds: 15
         livenessProbe:
           httpGet:
             path: /health
             port: liveness-port
           failureThreshold: 1
-          periodseconds: 15
+          periodSeconds: 15
 ---
 apiVersion: v1
 kind: Service
