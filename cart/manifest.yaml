@@ -6,7 +6,7 @@ metadata:
 data:
   REDIS_HOST: "redis"
   CATALOGUE_HOST: "catalogue"
-  CATALOGIE_PORT: 8080
+  CATALOGIE_PORT: "8080"
 ---
 apiVersion: apps/v1
 kind: Deployment
