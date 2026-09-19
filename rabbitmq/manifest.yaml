@@ -6,7 +6,7 @@ metadata:
   # these are replica set labels
   labels:
     project: prints
-    componenet: rabbitmq
+    component: rabbitmq
     tier: db
 spec:
   replicas: 1
@@ -14,14 +14,14 @@ spec:
     # these labels are used to select pods
     matchLabels:
       project: prints
-      componenet: rabbitmq
+      component: rabbitmq
       tier: db
   # pod definition
   template:
     metadata:
       labels:
         project: prints
-        componenet: rabbitmq
+        component: rabbitmq
         tier: db
     spec:
       containers:
@@ -51,7 +51,7 @@ metadata:
 spec:
   selector:
     project: prints
-    componenet: rabbitmq
+    component: rabbitmq
     tier: db
   ports:
     - protocol: TCP
