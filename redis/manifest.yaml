@@ -6,7 +6,7 @@ metadata:
   # these are replica set labels
   labels:
     project: prints
-    componenet: redis
+    component: redis
     tier: db
 spec:
   replicas: 1
@@ -14,14 +14,14 @@ spec:
     # these labels are used to select pods
     matchLabels:
       project: prints
-      componenet: redis
+      component: redis
       tier: db
   # pod definition
   template:
     metadata:
       labels:
         project: prints
-        componenet: redis
+        component: redis
         tier: db
     spec:
       containers:
@@ -46,7 +46,7 @@ metadata:
 spec:
   selector:
     project: prints
-    componenet: redis
+    component: redis
     tier: db
   ports:
     - protocol: TCP

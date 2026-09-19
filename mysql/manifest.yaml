@@ -16,7 +16,7 @@ metadata:
   # these are replica set labels
   labels:
     project: prints
-    componenet: mysql
+    component: mysql
     tier: db
 spec:
   replicas: 1
@@ -24,14 +24,14 @@ spec:
     # these labels are used to select pods
     matchLabels:
       project: prints
-      componenet: mysql
+      component: mysql
       tier: db
   # pod definition
   template:
     metadata:
       labels:
         project: prints
-        componenet: mysql
+        component: mysql
         tier: db
     spec:
       containers:
@@ -68,7 +68,7 @@ metadata:
 spec:
   selector:
     project: prints
-    componenet: mysql
+    component: mysql
     tier: db
   ports:
     - protocol: TCP

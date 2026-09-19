@@ -15,7 +15,7 @@ metadata:
   # these are replica set labels
   labels:
     project: prints
-    componenet: catalogue
+    component: catalogue
     tier: backend
 spec:
   replicas: 1
@@ -23,14 +23,14 @@ spec:
     # these labels are used to select pods
     matchLabels:
       project: prints
-      componenet: catalogue
+      component: catalogue
       tier: backend
   # pod definition
   template:
     metadata:
       labels:
         project: prints
-        componenet: catalogue
+        component: catalogue
         tier: backend
     spec:
       containers:
@@ -64,7 +64,7 @@ metadata:
 spec:
   selector:
     project: prints
-    componenet: catalogue
+    component: catalogue
     tier: backend
   ports:
     - protocol: TCP
